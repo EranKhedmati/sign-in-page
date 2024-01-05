@@ -16,7 +16,7 @@
 <!--  App  -->
 <div class="App">
     <!--  Showcase  -->
-    <section class="show-case">
+    <section class="show-case flex-column">
         <h1 class="title">Stay updated!</h1>
         <p class="describe">Join 60,000+ products managers receiving monthly updates on:</p>
         <!--  List  -->
@@ -34,6 +34,12 @@
                 <p>And much more!</p>
             </li>
         </ul>
+        <!--  From  -->
+        <form id="form" class="form flex-column">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" class="email-input" placeholder="email@company.com">
+            <button type="submit" class="sub-btn">Subscribe To monthly newsletter</button>
+        </form>
     </section>
     <!--  Cover  -->
     <div class="cover"><img src="./assets/images/illustration-sign-up-desktop.svg" alt="Cover"></div>

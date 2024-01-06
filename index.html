@@ -36,8 +36,12 @@
         </ul>
         <!--  From  -->
         <form id="form" class="form flex-column">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" class="email-input" placeholder="email@company.com">
+            <div>
+                <label for="email">Email Address</label>
+                <span id="email-error">Valid email required</span>
+            </div>
+            <input type="text" id="email" class="email-input" placeholder="email@company.com">
+            <!--  the type of input must be text because of alert span  -->
             <button type="submit" class="sub-btn">Subscribe To monthly newsletter</button>
         </form>
     </section>

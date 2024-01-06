@@ -69,13 +69,6 @@ body {
 }
 
 /* Form */
-.App .show-case .form label{
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--dark-slat-grey);
-    margin-bottom: 0.5rem;
-}
-
 .App .show-case .form input {
     border-radius: 0.5rem;
     border: solid 1px var(--grey);
@@ -96,3 +89,22 @@ body {
 .App .show-case .form button:hover {
     background-image: linear-gradient(to right, var(--tomato), red);
 }
+
+.App .show-case .form div:first-child {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-slat-grey);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.App .show-case .form div:first-child span {
+    color: var(--tomato);
+    display: none;
+}
+/*.App .show-case .form label{*/
+/*    font-size: 0.8rem;*/
+/*    font-weight: 700;*/
+/*    color: var(--dark-slat-grey);*/
+/*    margin-bottom: 0.5rem;*/
+/*}*/

@@ -14,7 +14,7 @@
 <body>
 
 <!--  App  -->
-<div class="App">
+<div class="App" id="App">
     <!--  Showcase  -->
     <section class="show-case flex-column">
         <h1 class="title">Stay updated!</h1>
@@ -42,7 +42,7 @@
             </div>
             <input type="text" id="email" class="email-input" placeholder="email@company.com">
             <!--  the type of input must be text because of alert span  -->
-            <button type="submit" class="sub-btn">Subscribe To monthly newsletter</button>
+            <button type="submit" class="sub-btn action-btn">Subscribe To monthly newsletter</button>
         </form>
     </section>
     <!--  Cover  -->
@@ -52,6 +52,12 @@
         <!-- Mobile -->
         <img src="./assets/images/illustration-sign-up-mobile.svg" class="mobile-cover" alt="Cover">
     </div>
+</div>
+<div class="thanks flex-column" id="thanks">
+    <img src="./assets/images/icon-list.svg" alt="Check-icon">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
+    <button class="action-btn">Dismiss message</button>
 </div>
 
 <!--  script  -->

@@ -13,15 +13,40 @@ let valEmail = (input) => {
 // When the form submit
 form.addEventListener("submit", (e) => {
     e.preventDefault()
-    valEmail(emailInput) ? form.submit() : showError(true);
+    valEmail(emailInput) ? changeScreen() : showError(true);
 })
 
 // When got error
 function showError(status) {
-    if(status) {
-    emailErrorEl.style.display = "block";
-    emailInput.style.background = "#ffc2b3";
-    emailInput.style.borderColor = "var(--tomato)";
+    if (status) {
+        emailErrorEl.style.display = "block";
+        emailInput.style.background = "#ffc2b3";
+        emailInput.style.borderColor = "var(--tomato)";
     }
 }
 
+// Change Screen Sub --------------------------------------
+// Elements
+const App = document.getElementById("App"),
+    thanks = document.getElementById("thanks");
+
+let appIsShow = true;
+
+function changeScreen() {
+    switch (appIsShow) {
+        case true:
+            App.style.display = "none";
+            thanks.style.display = "flex";
+            appIsShow = false;
+            break;
+        case false:
+            App.style.display = "flex";
+            thanks.style.display = "none";
+            appIsShow = true;
+            break;
+    }
+}
+
+// when click on dismiss
+const dismissBtn = document.getElementById("dismiss-btn");
+dismissBtn.addEventListener("click", () => changeScreen())
